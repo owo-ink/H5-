@@ -48,7 +48,6 @@
       pageList: []
     },
     created: function () {
-      console.log(this)
       const textList = this.$dom.userEdit.childNodes
       let tempIndex = 0
       this.data.pageList[this.data.pageNum] = []
