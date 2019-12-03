@@ -1,0 +1,229 @@
+[2019-12-03T14:54:18.419] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-12-03T14:54:18.421] [INFO] default - 程序运行目录: D:\work\学习问答
+[2019-12-03T14:54:18.421] [INFO] default - 首次启动!
+[2019-12-03T14:54:18.421] [INFO] default - 生成版本号: 5w1izt9hs94
+[2019-12-03T14:54:18.428] [INFO] default - 清理资源文件夹: D:\work\学习问答\dist\static
+[2019-12-03T14:54:18.428] [INFO] default - 文件夹不存在: D:\work\学习问答\dist\static
+[2019-12-03T14:54:18.428] [INFO] default - 创建文件夹: D:\work\学习问答\dist\static
+[2019-12-03T14:54:18.429] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-12-03T14:54:18.429] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-12-03T14:54:18.429] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-12-03T14:54:18.430] [INFO] default - 开始处理模块: one
+[2019-12-03T14:54:18.790] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-12-03T14:54:18.833] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-12-03T14:54:18.834] [DEBUG] default - 页面one处理用时: 405 毫秒!
+[2019-12-03T14:54:18.834] [INFO] default - 开始处理模块: two
+[2019-12-03T14:54:18.859] [DEBUG] default - 缓存模板: two./src/page/two.owo
+[2019-12-03T14:54:18.865] [DEBUG] default - 页面two处理用时: 31 毫秒!
+[2019-12-03T14:54:18.866] [INFO] default - 文件夹不存在: D:/work/学习问答/dist/static/resource
+[2019-12-03T14:54:18.867] [INFO] default - 创建文件夹: D:/work/学习问答/dist/static/resource
+[2019-12-03T14:54:18.868] [DEBUG] default - 处理资源:  [ 'D:/work/学习问答/src/resource/spot-2.png',
+  'D:/work/学习问答/src/resource/spot.png' ]
+[2019-12-03T14:54:18.869] [DEBUG] default - 资源目录:  D:/work/学习问答/dist/static/resource
+[2019-12-03T14:54:18.870] [DEBUG] default - css中的资源处理完毕!
+[2019-12-03T14:54:19.376] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-12-03T14:54:19.419] [INFO] default - 文件夹不存在: D:\work\学习问答\dist\static\css
+[2019-12-03T14:54:19.419] [INFO] default - 创建文件夹: D:\work\学习问答\dist\static\css
+[2019-12-03T14:54:19.419] [INFO] default - 开始处理附属css中的资源
+[2019-12-03T14:54:19.419] [INFO] default - 附属css中的资源处理完毕!
+[2019-12-03T14:54:19.419] [INFO] default - 读取文件: D:\work\学习问答\src\resource\swiper.4.5.0.min.css
+[2019-12-03T14:54:19.420] [INFO] default - 附属css中的资源不需要处理!
+[2019-12-03T14:54:19.420] [INFO] default - 处理字体: {}
+[2019-12-03T14:54:19.561] [INFO] default - 使用postcss处理完毕! 用时: 185 毫秒
+[2019-12-03T14:54:19.562] [INFO] default - 正在处理script!
+[2019-12-03T14:54:19.563] [DEBUG] default - 选择将js合并到html中!
+[2019-12-03T14:54:20.224] [INFO] default - 工程中包含多个页面!
+[2019-12-03T14:54:20.225] [INFO] default - js中的资源处理完毕!
+[2019-12-03T14:54:20.226] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"swiper.4.5.0","src":"./src/resource/swiper.4.5.0.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-12-03T14:54:20.226] [DEBUG] default - 外部脚本数量: 3
+[2019-12-03T14:54:20.226] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-12-03T14:54:20.226] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-12-03T14:54:20.226] [DEBUG] default - 处理脚本: swiper.4.5.0
+[2019-12-03T14:54:20.226] [INFO] default - 读取文件: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:54:20.226] [DEBUG] default - 处理脚本: main
+[2019-12-03T14:54:20.226] [INFO] default - 读取文件: D:\work\学习问答\src\main.js
+[2019-12-03T14:54:20.226] [DEBUG] default - 输出scriptData
+[2019-12-03T14:54:20.227] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;.css
+[2019-12-03T14:54:20.227] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;delay400.css
+[2019-12-03T14:54:20.228] [DEBUG] default - 准备输出html!
+[2019-12-03T14:54:20.228] [DEBUG] default - 处理资源:  [ 'D:/work/学习问答/src/resource/one-4.png',
+  'D:/work/学习问答/src/resource/one-2.png',
+  'D:/work/学习问答/src/resource/two-1.png',
+  'D:/work/学习问答/src/resource/two-2.png',
+  'D:/work/学习问答/src/resource/two-3.png',
+  'D:/work/学习问答/src/resource/two-4.png' ]
+[2019-12-03T14:54:20.229] [DEBUG] default - 资源目录:  D:/work/学习问答/dist/static/resource
+[2019-12-03T14:54:20.230] [INFO] default - 文件夹不存在: D:\work\学习问答\dist\static\js
+[2019-12-03T14:54:20.230] [INFO] default - 创建文件夹: D:\work\学习问答\dist\static\js
+[2019-12-03T14:54:20.231] [INFO] default - 包含有页面切换动画!
+[2019-12-03T14:54:20.231] [INFO] default - 动画列表: scaleDownCenter,scaleUpCenter,amp;,amp;delay400,moveToRight,scaleUp,moveToLeft
+[2019-12-03T14:54:20.231] [INFO] default - 编译结束!
+[2019-12-03T14:54:20.232] [INFO] default - 发送页面需要刷新命令!
+[2019-12-03T14:54:20.246] [INFO] default - 写入文件: D:\work\学习问答\dist\static\css\owo.main.css
+[2019-12-03T14:54:20.246] [INFO] default - 主要逻辑文件写出成功!
+[2019-12-03T14:54:20.246] [INFO] default - 读取成功: D:\work\学习问答\src\main.css
+[2019-12-03T14:54:20.247] [DEBUG] default - 处理资源:  [ 'D:/work/学习问答/src/resource/one-5.png' ]
+[2019-12-03T14:54:20.247] [DEBUG] default - 资源目录:  D:/work/学习问答/dist/static/resource
+[2019-12-03T14:54:20.247] [INFO] default - 读取成功: D:\work\学习问答\src\main.js
+[2019-12-03T14:54:20.263] [INFO] default - 读取成功: D:\work\学习问答\src\resource\swiper.4.5.0.min.css
+[2019-12-03T14:54:20.277] [INFO] default - 写入文件: D:\work\学习问答\dist\static\css\main.css
+[2019-12-03T14:54:20.282] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\main.js
+[2019-12-03T14:54:20.284] [INFO] default - 写入文件: D:\work\学习问答\dist\static\css\swiper4.5.0.css
+[2019-12-03T14:54:20.302] [INFO] default - 读取成功: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:54:20.303] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\swiper.4.5.0.js
+[2019-12-03T14:55:12.718] [INFO] default - file change: D:\work\学习问答\src\page\one.owo
+[2019-12-03T14:55:12.719] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-12-03T14:55:12.719] [INFO] default - 程序运行目录: D:\work\学习问答
+[2019-12-03T14:55:12.719] [INFO] default - 刷新模式,变化目录: D:\work\学习问答\src\page\one.owo
+[2019-12-03T14:55:12.719] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-12-03T14:55:12.719] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-12-03T14:55:12.719] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-12-03T14:55:12.720] [INFO] default - 开始处理模块: one
+[2019-12-03T14:55:12.732] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-12-03T14:55:12.737] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-12-03T14:55:12.737] [DEBUG] default - 页面one处理用时: 17 毫秒!
+[2019-12-03T14:55:12.737] [INFO] default - 开始处理模块: two
+[2019-12-03T14:55:12.769] [DEBUG] default - 缓存模板: two./src/page/two.owo
+[2019-12-03T14:55:12.775] [DEBUG] default - 页面two处理用时: 38 毫秒!
+[2019-12-03T14:55:12.776] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/spot-2.png
+[2019-12-03T14:55:12.776] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/spot.png
+[2019-12-03T14:55:12.776] [DEBUG] default - css中的资源处理完毕!
+[2019-12-03T14:55:12.776] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-12-03T14:55:12.780] [INFO] default - 处理字体: {}
+[2019-12-03T14:55:12.782] [INFO] default - 使用postcss处理完毕! 用时: 6 毫秒
+[2019-12-03T14:55:12.782] [INFO] default - 正在处理script!
+[2019-12-03T14:55:12.783] [DEBUG] default - 选择将js合并到html中!
+[2019-12-03T14:55:12.825] [INFO] default - 工程中包含多个页面!
+[2019-12-03T14:55:12.826] [INFO] default - js中的资源处理完毕!
+[2019-12-03T14:55:12.826] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"swiper.4.5.0","src":"./src/resource/swiper.4.5.0.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-12-03T14:55:12.826] [DEBUG] default - 外部脚本数量: 3
+[2019-12-03T14:55:12.827] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-12-03T14:55:12.827] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-12-03T14:55:12.827] [DEBUG] default - 处理脚本: swiper.4.5.0
+[2019-12-03T14:55:12.827] [INFO] default - 读取文件: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:55:12.827] [DEBUG] default - 处理脚本: main
+[2019-12-03T14:55:12.827] [INFO] default - 读取文件: D:\work\学习问答\src\main.js
+[2019-12-03T14:55:12.827] [DEBUG] default - 输出scriptData
+[2019-12-03T14:55:12.828] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;.css
+[2019-12-03T14:55:12.828] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;delay400.css
+[2019-12-03T14:55:12.828] [DEBUG] default - 准备输出html!
+[2019-12-03T14:55:12.829] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/one-4.png
+[2019-12-03T14:55:12.829] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/one-2.png
+[2019-12-03T14:55:12.829] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-1.png
+[2019-12-03T14:55:12.829] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-2.png
+[2019-12-03T14:55:12.829] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-3.png
+[2019-12-03T14:55:12.829] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-4.png
+[2019-12-03T14:55:12.831] [INFO] default - 包含有页面切换动画!
+[2019-12-03T14:55:12.831] [INFO] default - 动画列表: scaleDownCenter,scaleUpCenter,amp;,amp;delay400,moveToRight,scaleUp,moveToLeft
+[2019-12-03T14:55:12.832] [INFO] default - 编译结束!
+[2019-12-03T14:55:12.836] [INFO] default - 发送页面需要刷新命令!
+[2019-12-03T14:55:12.838] [INFO] default - 写入文件: D:\work\学习问答\dist\static\css\owo.main.css
+[2019-12-03T14:55:12.838] [INFO] default - 读取成功: D:\work\学习问答\src\main.js
+[2019-12-03T14:55:12.838] [INFO] default - 主要逻辑文件写出成功!
+[2019-12-03T14:55:12.839] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\main.js
+[2019-12-03T14:55:12.839] [INFO] default - 读取成功: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:55:12.840] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\swiper.4.5.0.js
+[2019-12-03T14:55:40.190] [INFO] default - file change: D:\work\学习问答\src\page\two.owo
+[2019-12-03T14:55:40.190] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-12-03T14:55:40.190] [INFO] default - 程序运行目录: D:\work\学习问答
+[2019-12-03T14:55:40.190] [INFO] default - 刷新模式,变化目录: D:\work\学习问答\src\page\two.owo
+[2019-12-03T14:55:40.190] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-12-03T14:55:40.191] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-12-03T14:55:40.191] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-12-03T14:55:40.191] [INFO] default - 开始处理模块: one
+[2019-12-03T14:55:40.199] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-12-03T14:55:40.202] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-12-03T14:55:40.202] [DEBUG] default - 页面one处理用时: 11 毫秒!
+[2019-12-03T14:55:40.202] [INFO] default - 开始处理模块: two
+[2019-12-03T14:55:40.250] [DEBUG] default - 缓存模板: two./src/page/two.owo
+[2019-12-03T14:55:40.255] [DEBUG] default - 页面two处理用时: 53 毫秒!
+[2019-12-03T14:55:40.256] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/spot-2.png
+[2019-12-03T14:55:40.256] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/spot.png
+[2019-12-03T14:55:40.256] [DEBUG] default - css中的资源处理完毕!
+[2019-12-03T14:55:40.256] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-12-03T14:55:40.259] [INFO] default - 处理字体: {}
+[2019-12-03T14:55:40.260] [INFO] default - 使用postcss处理完毕! 用时: 4 毫秒
+[2019-12-03T14:55:40.260] [INFO] default - 正在处理script!
+[2019-12-03T14:55:40.262] [DEBUG] default - 选择将js合并到html中!
+[2019-12-03T14:55:40.289] [INFO] default - 工程中包含多个页面!
+[2019-12-03T14:55:40.290] [INFO] default - js中的资源处理完毕!
+[2019-12-03T14:55:40.290] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"swiper.4.5.0","src":"./src/resource/swiper.4.5.0.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-12-03T14:55:40.290] [DEBUG] default - 外部脚本数量: 3
+[2019-12-03T14:55:40.290] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-12-03T14:55:40.290] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-12-03T14:55:40.290] [DEBUG] default - 处理脚本: swiper.4.5.0
+[2019-12-03T14:55:40.290] [INFO] default - 读取文件: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:55:40.291] [DEBUG] default - 处理脚本: main
+[2019-12-03T14:55:40.291] [INFO] default - 读取文件: D:\work\学习问答\src\main.js
+[2019-12-03T14:55:40.291] [DEBUG] default - 输出scriptData
+[2019-12-03T14:55:40.291] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;.css
+[2019-12-03T14:55:40.292] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;delay400.css
+[2019-12-03T14:55:40.292] [DEBUG] default - 准备输出html!
+[2019-12-03T14:55:40.292] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/one-4.png
+[2019-12-03T14:55:40.292] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/one-2.png
+[2019-12-03T14:55:40.292] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-1.png
+[2019-12-03T14:55:40.293] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-2.png
+[2019-12-03T14:55:40.293] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-3.png
+[2019-12-03T14:55:40.293] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-4.png
+[2019-12-03T14:55:40.294] [INFO] default - 包含有页面切换动画!
+[2019-12-03T14:55:40.294] [INFO] default - 动画列表: scaleDownCenter,scaleUpCenter,amp;,amp;delay400,moveToRight,scaleUp,moveToLeft
+[2019-12-03T14:55:40.294] [INFO] default - 编译结束!
+[2019-12-03T14:55:40.295] [INFO] default - 发送页面需要刷新命令!
+[2019-12-03T14:55:40.295] [INFO] default - 读取成功: D:\work\学习问答\src\main.js
+[2019-12-03T14:55:40.296] [INFO] default - 写入文件: D:\work\学习问答\dist\static\css\owo.main.css
+[2019-12-03T14:55:40.296] [INFO] default - 主要逻辑文件写出成功!
+[2019-12-03T14:55:40.296] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\main.js
+[2019-12-03T14:55:40.296] [INFO] default - 读取成功: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:55:40.297] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\swiper.4.5.0.js
+[2019-12-03T14:56:04.352] [INFO] default - file change: D:\work\学习问答\src\page\two.owo
+[2019-12-03T14:56:04.352] [INFO] default - --------------------------- 开始编译 ---------------------------
+[2019-12-03T14:56:04.352] [INFO] default - 程序运行目录: D:\work\学习问答
+[2019-12-03T14:56:04.352] [INFO] default - 刷新模式,变化目录: D:\work\学习问答\src\page\two.owo
+[2019-12-03T14:56:04.352] [INFO] default - 读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html
+[2019-12-03T14:56:04.352] [DEBUG] default - 读取网页标题: {TAG_14226_TAG}
+[2019-12-03T14:56:04.353] [DEBUG] default - 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}]
+[2019-12-03T14:56:04.353] [INFO] default - 开始处理模块: one
+[2019-12-03T14:56:04.359] [DEBUG] default - 缓存模板: one./src/page/one.owo
+[2019-12-03T14:56:04.362] [DEBUG] default - 发现 keyframes 规则: fade
+[2019-12-03T14:56:04.362] [DEBUG] default - 页面one处理用时: 9 毫秒!
+[2019-12-03T14:56:04.362] [INFO] default - 开始处理模块: two
+[2019-12-03T14:56:04.388] [DEBUG] default - 缓存模板: two./src/page/two.owo
+[2019-12-03T14:56:04.393] [DEBUG] default - 页面two处理用时: 31 毫秒!
+[2019-12-03T14:56:04.393] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/spot-2.png
+[2019-12-03T14:56:04.393] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/spot.png
+[2019-12-03T14:56:04.393] [DEBUG] default - css中的资源处理完毕!
+[2019-12-03T14:56:04.393] [DEBUG] default - 使用postcss处理样式，使用了1个插件!
+[2019-12-03T14:56:04.399] [INFO] default - 处理字体: {}
+[2019-12-03T14:56:04.399] [INFO] default - 使用postcss处理完毕! 用时: 6 毫秒
+[2019-12-03T14:56:04.399] [INFO] default - 正在处理script!
+[2019-12-03T14:56:04.401] [DEBUG] default - 选择将js合并到html中!
+[2019-12-03T14:56:04.424] [INFO] default - 工程中包含多个页面!
+[2019-12-03T14:56:04.425] [INFO] default - js中的资源处理完毕!
+[2019-12-03T14:56:04.425] [DEBUG] default - 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"swiper.4.5.0","src":"./src/resource/swiper.4.5.0.min.js"},{"name":"main","src":"./src/main.js","resource":true}]
+[2019-12-03T14:56:04.425] [DEBUG] default - 外部脚本数量: 3
+[2019-12-03T14:56:04.425] [DEBUG] default - 处理脚本: jquery1.11.0
+[2019-12-03T14:56:04.425] [DEBUG] default - 网络脚本: jquery1.11.0
+[2019-12-03T14:56:04.425] [DEBUG] default - 处理脚本: swiper.4.5.0
+[2019-12-03T14:56:04.425] [INFO] default - 读取文件: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:56:04.425] [DEBUG] default - 处理脚本: main
+[2019-12-03T14:56:04.425] [INFO] default - 读取文件: D:\work\学习问答\src\main.js
+[2019-12-03T14:56:04.425] [DEBUG] default - 输出scriptData
+[2019-12-03T14:56:04.426] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;.css
+[2019-12-03T14:56:04.426] [ERROR] default - file does not exist: C:\Users\PG\Documents\GitHub\PG\core\animation\amp;delay400.css
+[2019-12-03T14:56:04.427] [DEBUG] default - 准备输出html!
+[2019-12-03T14:56:04.427] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/one-4.png
+[2019-12-03T14:56:04.427] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/one-2.png
+[2019-12-03T14:56:04.427] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-1.png
+[2019-12-03T14:56:04.427] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-2.png
+[2019-12-03T14:56:04.427] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-3.png
+[2019-12-03T14:56:04.427] [DEBUG] default - 忽略文件: D:/work/学习问答/src/resource/two-4.png
+[2019-12-03T14:56:04.428] [INFO] default - 包含有页面切换动画!
+[2019-12-03T14:56:04.428] [INFO] default - 动画列表: scaleDownCenter,scaleUpCenter,amp;,amp;delay400,moveToRight,scaleUp,moveToLeft
+[2019-12-03T14:56:04.429] [INFO] default - 编译结束!
+[2019-12-03T14:56:04.430] [INFO] default - 发送页面需要刷新命令!
+[2019-12-03T14:56:04.430] [INFO] default - 读取成功: D:\work\学习问答\src\main.js
+[2019-12-03T14:56:04.430] [INFO] default - 主要逻辑文件写出成功!
+[2019-12-03T14:56:04.430] [INFO] default - 写入文件: D:\work\学习问答\dist\static\css\owo.main.css
+[2019-12-03T14:56:04.431] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\main.js
+[2019-12-03T14:56:04.432] [INFO] default - 读取成功: D:\work\学习问答\src\resource\swiper.4.5.0.min.js
+[2019-12-03T14:56:04.432] [INFO] default - 写入文件: D:\work\学习问答\dist\static\js\swiper.4.5.0.js

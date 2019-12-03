@@ -48,5 +48,5 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 }
 
 .scale-box {
-  background-image: url('@|one-5.png|');
+  background-image: url('../resource/one-5.png');
 }

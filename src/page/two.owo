@@ -1,0 +1,165 @@
+<template lang="pug">
+.two
+  img.soulless.so-1.item-1(width="713", height="716", src="@|two-1.png|")
+  img.soulless.so-2.item-2#previous(width="167", height="54", src="@|two-2.png|", :tap="previous")
+  img.soulless.so-3.item-3#last(width="167", height="54", src="@|two-3.png|", :tap="last")
+  img.soulless.so-4.item-4(width="205", height="55", src="@|two-4.png|", :tap="owo.go('one', 'scaleDownCenter', 'scaleUpCenter&&delay400', 'scaleDownCenter', 'scaleUpCenter&&delay400', true)")
+  ul.text-box#textBox
+  ul.user-edit#userEdit
+    li.main
+      a(href="#") 如何理解坚持党中央集中统一领导？
+    li.main
+      a(href="#") 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
+    li.main
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li.main
+      a(href="#") 如何建设高素质专业化干部队伍？
+    li
+      a(href="#") 如何理解“坚持党的领导的核心要义”？
+    li.main
+      a(href="#") 如何理解坚持党中央集中统一领导？
+    li.main
+      a(href="#") 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
+    li.main
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li
+      a(href="#") 为什么要加强制度自信宣传教育？
+    li.main
+      a(href="#") 如何建设高素质专业化干部队伍？
+    li
+      a(href="#") 如何理解“坚持党的领导的核心要义”？
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      activeIndex: 0,
+      pageNum: 0,
+      pageList: []
+    },
+    created: function () {
+      console.log(this)
+      const textList = this.$dom.userEdit.childNodes
+      let tempIndex = 0
+      this.data.pageList[this.data.pageNum] = []
+      for (let ind = 0; ind < textList.length; ind++) {
+        const item = textList[ind]
+        if (item.classList.contains('main')) {
+          tempIndex++
+        }
+        if (tempIndex > 3) {
+          tempIndex = 0
+          this.data.pageNum++
+          this.data.pageList[this.data.pageNum] = []
+        }
+        this.data.pageList[this.data.pageNum].push(item)
+        
+      }
+      this.setActive(0)
+      console.log(this.data.pageList)
+    },
+    setActive: function (index) {
+      if (index === 0) {
+        this.$dom.previous.classList.add('forbidden')
+      } else {
+        this.$dom.previous.classList.remove('forbidden')
+      }
+      console.log(this.data.pageList.length, index)
+      if (this.data.pageList.length <= index + 1) {
+        this.$dom.last.classList.add('forbidden')
+      } else {
+        this.$dom.last.classList.remove('forbidden')
+      }
+      this.$dom.textBox.innerHTML = ''
+      this.data.pageList[index].forEach(element => {
+        this.$dom.textBox.append(element)
+      })
+    },
+    last: function () {
+      this.data.activeIndex++
+      this.setActive(this.data.activeIndex)
+    },
+    previous: function () {
+      this.data.activeIndex--
+      this.setActive(this.data.activeIndex)
+    },
+  }
+</script>
+
+
+<style lang="less">
+.so-1 {
+  position: absolute;
+  left: 17px;
+  top: 379px;
+  z-index: 5;
+}
+.so-2 {
+  position: absolute;
+  left: 85px;
+  top: 1138px;
+  z-index: 4;
+}
+.so-3 {
+  position: absolute;
+  left: 271px;
+  top: 1138px;
+  z-index: 3;
+}
+.so-4 {
+  position: absolute;
+  left: 456px;
+  top: 1137px;
+  z-index: 2;
+}
+.text-box {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 495px;
+  width: 590px;
+  height: 490px;
+  overflow: auto;
+  li {
+    line-height: 46px;
+    font-size: 32px;
+    background-image: url("@|spot-2.png|");
+    background-repeat: no-repeat;
+    background-position: 40px 17px;
+    padding-left: 60px;
+    font-size: 26px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+  }
+  .main {
+    background-image: url("@|spot.png|");
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+}
+.user-edit {
+  display: none;
+}
+.forbidden {
+  filter: gray;
+  filter: grayscale(50%);
+  pointer-events: none;
+  user-select: none;
+}
+</style>
