@@ -33,7 +33,7 @@
     <!-- 页面[one]-->
     <div class="one owo" template="one" style="display: none;"><img class="soulless so-4 item-4" width="585" height="700" src="./static/resource/one-4.png"><p class="soulless so-3 item-3">党的十九届四中全会精神</p><img class="soulless so-2 item-2" width="202" height="72" src="./static/resource/one-2.png" :tap="owo.go('two', 'scaleDownCenter', 'scaleUpCenter&amp;&amp;delay400', 'scaleDownCenter', 'scaleUpCenter&amp;&amp;delay400', true)"></div>
     <!-- 页面[two]-->
-    <div class="two owo" template="two" style="display: none;"><img class="soulless so-1 item-1" width="713" height="716" src="./static/resource/two-1.png"><img class="soulless so-2 item-2" id="previous" width="167" height="54" src="./static/resource/two-2.png" :tap="previous"><img class="soulless so-3 item-3" id="last" width="167" height="54" src="./static/resource/two-3.png" :tap="last"><img class="soulless so-4 item-4" width="205" height="55" src="./static/resource/two-4.png" :tap="owo.go('one', 'scaleDownCenter', 'scaleUpCenter&amp;&amp;delay400', 'scaleDownCenter', 'scaleUpCenter&amp;&amp;delay400', true)"><ul class="text-box" id="textBox"></ul><ul class="user-edit" id="userEdit"><li class="main"><a href="#">如何理解坚持党中央集中统一领导？</a></li><li class="main"><a href="#">如何提高制度执行力，把我国制度优势更好转化为国家治理效能？</a></li><li class="main"><a href="#">为什么要加强制度自信宣传教育？</a></li><li><a href="#">为什么要加强制度自信宣传教育？</a></li><li><a href="#">为什么要加强制度自信宣传教育？</a></li><li><a href="#">为什么要加强制度自信宣传教育？</a></li><li class="main"><a href="#">如何建设高素质专业化干部队伍？</a></li><li><a href="#">如何理解“坚持党的领导的核心要义”？</a></li><li class="main"><a href="#">如何理解坚持党中央集中统一领导？</a></li><li class="main"><a href="#">如何提高制度执行力，把我国制度优势更好转化为国家治理效能？</a></li><li class="main"><a href="#">为什么要加强制度自信宣传教育？</a></li><li><a href="#">为什么要加强制度自信宣传教育？</a></li><li><a href="#">为什么要加强制度自信宣传教育？</a></li><li><a href="#">为什么要加强制度自信宣传教育？</a></li><li class="main"><a href="#">如何建设高素质专业化干部队伍？</a></li><li><a href="#">如何理解“坚持党的领导的核心要义”？</a></li></ul></div></div>
+    <div class="two owo" template="two" style="display: none;"><img class="soulless so-1 item-1" width="713" height="716" src="./static/resource/two-1.png"><img class="soulless so-2 item-2" id="previous" width="167" height="54" src="./static/resource/two-2.png" :tap="previous"><img class="soulless so-3 item-3" id="last" width="167" height="54" src="./static/resource/two-3.png" :tap="last"><img class="soulless so-4 item-4" width="205" height="55" src="./static/resource/two-4.png" :tap="owo.go('one', 'scaleDownCenter', 'scaleUpCenter&amp;&amp;delay400', 'scaleDownCenter', 'scaleUpCenter&amp;&amp;delay400', true)"><div class="page" id="page">1/9</div><ul class="text-box" id="textBox"></ul><ul class="user-edit" id="userEdit"><li><p>如何理解坚持党中央集中统一领导？</p></li><li><p>如何提高制度执行力，把我国制度优势更好转化为国家治理效能？</p></li><li><p>为什么要加强制度自信宣传教育？</p><div class="branch"><a href="http://www.people.com.cn/">为什么要加强制度自信宣传教育？</a></div><div class="branch"><a href="http://www.people.com.cn/">为什么要加强制度自信宣传教育？</a></div><div class="branch"><a href="http://www.people.com.cn/">为什么要加强制度自信宣传教育？</a></div></li><li><p>如何建设高素质专业化干部队伍？</p><div class="branch"><a href="http://www.people.com.cn/">如何理解“坚持党的领导的核心要义”？</a></div></li><li><p>如何理解坚持党中央集中统一领导？</p></li><li>如何提高制度执行力，把我国制度优势更好转化为国家治理效能？</li><li>为什么要加强制度自信宣传教育？<div class="branch"><a href="http://www.people.com.cn/">为什么要加强制度自信宣传教育？</a></div><div class="branch"><a href="http://www.people.com.cn/">为什么要加强制度自信宣传教育？</a></div><div class="branch"><a href="http://www.people.com.cn/">为什么要加强制度自信宣传教育？</a></div></li><li><p>如何建设高素质专业化干部队伍？</p><div class="branch"><a href="http://www.people.com.cn/">如何理解“坚持党的领导的核心要义”？</a></div></li></ul></div></div>
     
 
     <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
@@ -64,22 +64,27 @@ owo.script = {
       "pageList": []
     },
     "created": function created() {
-      var textList = this.$dom.userEdit.childNodes;
+      var textList = this.$dom.userEdit.children;
       var tempIndex = 0;
       this.data.pageList[this.data.pageNum] = [];
 
       for (var ind = 0; ind < textList.length; ind++) {
         var item = textList[ind];
+        tempIndex++;
 
-        if (item.classList.contains('main')) {
-          tempIndex++;
-        }
-
-        if (tempIndex > 3) {
+        if (tempIndex > 5) {
           tempIndex = 0;
           this.data.pageNum++;
           this.data.pageList[this.data.pageNum] = [];
         }
+
+        item.onclick = function () {
+          if (this.classList.contains('active')) {
+            this.classList.remove('active');
+          } else {
+            this.classList.add('active');
+          }
+        };
 
         this.data.pageList[this.data.pageNum].push(item);
       }
@@ -94,9 +99,8 @@ owo.script = {
         this.$dom.previous.classList.add('forbidden');
       } else {
         this.$dom.previous.classList.remove('forbidden');
-      }
+      } // console.log(this.data.pageList.length, index)
 
-      console.log(this.data.pageList.length, index);
 
       if (this.data.pageList.length <= index + 1) {
         this.$dom.last.classList.add('forbidden');
@@ -104,6 +108,7 @@ owo.script = {
         this.$dom.last.classList.remove('forbidden');
       }
 
+      this.$dom.page.innerHTML = index + 1 + '/' + (this.data.pageNum + 1);
       this.$dom.textBox.innerHTML = '';
       this.data.pageList[index].forEach(function (element) {
         _this.$dom.textBox.append(element);

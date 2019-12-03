@@ -153,25 +153,40 @@ li {
 }
 
 .two .text-box li {
-  line-height: 46px;
-  font-size: 32px;
-  background-image: url("../resource/spot-2.png");
-  background-repeat: no-repeat;
-  background-position: 40px 17px;
-  padding-left: 60px;
-  font-size: 26px;
+  line-height: 40px;
   font-weight: normal;
   font-family: "Microsoft YaHei";
-}
-
-.two .text-box .main {
   background-image: url("../resource/spot.png");
   background-repeat: no-repeat;
-  background-position: 10px 15px;
+  background-position: 10px 11px;
   padding-left: 40px;
   font-size: 30px;
   font-weight: bold;
   margin-top: 12px;
+  color: black;
+}
+
+.two .text-box .branch {
+  background-image: url("../resource/spot-2.png");
+  background-repeat: no-repeat;
+  background-position: 0 17px;
+  padding-left: 22px;
+  font-size: 26px;
+  height: 0;
+  overflow: hidden;
+  font-weight: normal;
+}
+
+.two .text-box a {
+  color: black;
+}
+
+.two .text-box p {
+  padding-bottom: 5px;
+}
+
+.two .text-box .active .branch {
+  height: auto;
 }
 
 .two .user-edit {
@@ -188,6 +203,15 @@ li {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.two .page {
+  position: absolute;
+  top: 440px;
+  left: 620px;
+  z-index: 9;
+  font-size: 30px;
+  color: #999999;
 }
 /* 页面切换动画 */
 .o-page-scaleDownCenter {
@@ -221,49 +245,4 @@ li {
 }
 
 
-.o-page-moveToRight {
-	-webkit-animation: moveToRight .6s ease both;
-	-moz-animation: moveToRight .6s ease both;
-	animation: moveToRight .6s ease both;
-}
-
-@-webkit-keyframes moveToRight { 
-	to { -webkit-transform: translateX(100%); }
-}
-@-moz-keyframes moveToRight { 
-	to { -moz-transform: translateX(100%); }
-}
-@keyframes moveToRight { 
-	to { transform: translateX(100%); }
-}
-.o-page-scaleUp {
-	-webkit-animation: scaleUp .7s ease both;
-	-moz-animation: scaleUp .7s ease both;
-	animation: scaleUp .7s ease both;
-}
-
-@-webkit-keyframes scaleUp {
-	from { opacity: 0; -webkit-transform: scale(.8); }
-}
-@-moz-keyframes scaleUp {
-	from { opacity: 0; -moz-transform: scale(.8); }
-}
-@keyframes scaleUp {
-	from { opacity: 0; transform: scale(.8); }
-}
-.o-page-moveToLeft {
-	-webkit-animation: moveToLeft .6s ease both;
-	-moz-animation: moveToLeft .6s ease both;
-	animation: moveToLeft .6s ease both;
-}
-
-@-webkit-keyframes moveToLeft {
-	to { -webkit-transform: translateX(-100%); }
-}
-@-moz-keyframes moveToLeft {
-	to { -moz-transform: translateX(-100%); }
-}
-@keyframes moveToLeft {
-	to { transform: translateX(-100%); }
-}
 
