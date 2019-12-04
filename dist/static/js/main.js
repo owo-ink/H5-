@@ -7,7 +7,7 @@ function getScale () {
   
   const scaleBox = document.getElementsByClassName('scale-box')[0]
   // 如果比例大于1则进入电脑模式
-  // alert(window.innerWidth / window.innerHeight)
+  // alert(window.innerHeight)
   if ((window.innerWidth / window.innerHeight) < 1) {
     var scale = window.innerWidth / deviseW
     scaleBox.style.width = deviseW + 'px'
@@ -16,7 +16,8 @@ function getScale () {
     // console.log(window.innerHeight, deviseH * scale)
     scaleBox.style.transformOrigin = `0 ${(window.innerHeight - deviseH * scale) + 'px' } 0`
     setTimeout(() => {
-      document.getElementsByTagName('html')[0].style.height = scaleBox.offsetHeight * scale + 'px'
+      // console.log(scaleBox.offsetHeight, scale)
+      // document.body.style.height = scaleBox.offsetHeight * scale + 'px'
     }, 0)
     document.body.classList.remove('pc')
   } else {

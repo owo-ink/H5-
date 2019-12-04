@@ -90,9 +90,10 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .pc .one .so-3 {
   left: 110px;
   top: 45px;
-  font-size: 30px;
+  font-size: 28px;
   width: 30px;
-  line-height: 33px;
+  line-height: 30px;
+  height: 384px;
 }
 
 .pc .one .so-2 {

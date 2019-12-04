@@ -1,6 +1,9 @@
 body, html, .owo, .page-box {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .owo-animation {
@@ -179,7 +182,7 @@ li {
   color: black;
 }
 
-.two .text-box .branch {
+.two .text-box p {
   background-image: url("../resource/spot-2.png");
   background-repeat: no-repeat;
   background-position: 0 17px;
@@ -194,17 +197,19 @@ li {
   color: black;
 }
 
-.two .text-box p {
+.two .text-box h2 {
   cursor: pointer;
   padding-bottom: 5px;
+  font-size: 30px;
 }
 
 .two .text-box a,
-.two .text-box p {
+.two .text-box p,
+.two .text-box h2 {
   display: block;
 }
 
-.two .text-box .active .branch {
+.two .text-box .active p {
   height: auto;
 }
 
@@ -267,6 +272,9 @@ li {
 	-webkit-animation-delay: .4s !important;
 	-moz-animation-delay: .4s !important;
 	animation-delay: .4s !important;
+}
+
+a:hover {
 }
 
 

@@ -9,40 +9,40 @@
     ul.text-box#textBox
     ul.user-edit#userEdit
       li
-        p 如何理解坚持党中央集中统一领导？
+        h2 如何理解坚持党中央集中统一领导？
       li
-        p 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
+        h2 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
       li
-        p 为什么要加强制度自信宣传教育？
-        .branch
+        h2 为什么要加强制度自信宣传教育？
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-        .branch
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-        .branch
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-        .branch
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-        .branch
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
       li
-        p 如何建设高素质专业化干部队伍？
-        .branch
+        h2 如何建设高素质专业化干部队伍？
+        p
           a(href="http://www.people.com.cn/") 如何理解“坚持党的领导的核心要义”？
       li
-        p 如何理解坚持党中央集中统一领导？
+        h2 如何理解坚持党中央集中统一领导？
       li
-        p 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
+        h2 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
       li
-        p 为什么要加强制度自信宣传教育？
-        .branch
+        h2 为什么要加强制度自信宣传教育？
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-        .branch
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-        .branch
+        p
           a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
       li
-        p 如何建设高素质专业化干部队伍？
-        .branch
+        h2 如何建设高素质专业化干部队伍？
+        p
           a(href="http://www.people.com.cn/") 如何理解“坚持党的领导的核心要义”？
 </template>
 
@@ -65,7 +65,7 @@
           this.data.pageNum++
           this.data.pageList[this.data.pageNum] = []
         }
-        item.getElementsByTagName('p')[0].onclick = function () {
+        item.getElementsByTagName('h2')[0].onclick = function () {
           const dom = this.parentNode || this.parentElement
           if (dom.classList.contains('active')) {
             dom.classList.remove('active')
@@ -162,7 +162,7 @@
     margin-top: 12px;
     color: black;
   }
-  .branch {
+  p {
     background-image: url("@|spot-2.png|");
     background-repeat: no-repeat;
     background-position: 0 17px;
@@ -175,14 +175,15 @@
   a {
     color: black;
   }
-  p {
+  h2 {
     cursor: pointer;
     padding-bottom: 5px;
+    font-size: 30px;
   }
-  a, p {
+  a, p, h2 {
     display: block;
   }
-  .active .branch {
+  .active p {
     height: auto;
   }
 }

@@ -16,6 +16,7 @@ function getScale () {
     // console.log(window.innerHeight, deviseH * scale)
     scaleBox.style.transformOrigin = `0 ${(window.innerHeight - deviseH * scale) + 'px' } 0`
     setTimeout(() => {
+      console.log(scaleBox.offsetHeight, scale)
       document.getElementsByTagName('html')[0].style.height = scaleBox.offsetHeight * scale + 'px'
     }, 0)
     document.body.classList.remove('pc')

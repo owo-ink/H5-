@@ -1,4 +1,4 @@
-// Wed Dec 04 2019 10:49:07 GMT+0800 (GMT+08:00)
+// Wed Dec 04 2019 11:13:34 GMT+0800 (GMT+08:00)
 
 // 存储页面基本信息
 var owo = {
@@ -40,7 +40,7 @@ owo.script = {
           this.data.pageList[this.data.pageNum] = [];
         }
 
-        item.getElementsByTagName('p')[0].onclick = function () {
+        item.getElementsByTagName('h2')[0].onclick = function () {
           var dom = this.parentNode || this.parentElement;
 
           if (dom.classList.contains('active')) {
