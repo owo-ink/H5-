@@ -1,3 +1,0 @@
-<template lang="pug">
-img.logo(src="@|logo.png|")
-</template>

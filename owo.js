@@ -9,7 +9,7 @@ module.exports = {
   outFolder: "./dist",
   container: "scale-box",
   // 手机入口
-  // phoneEnter: "loading",
+  phoneEnter: "loading",
   // 资源目录
   resourceFolder: "./src/resource",
   // head属性清单
@@ -120,16 +120,7 @@ module.exports = {
     {
       name: 'one',
       src: './src/page/one.owo'
-    },
-    {
-      name: 'two',
-      src: './src/page/two.owo'
-    },
-    {
-      name: 'logo',
-      src: './src/page/logo.owo',
-      type: "plug"
-    },
+    }
   ],
   // 调试模式配置
   dev: {
