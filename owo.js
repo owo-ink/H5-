@@ -125,6 +125,11 @@ module.exports = {
       name: 'two',
       src: './src/page/two.owo'
     },
+    {
+      name: 'logo',
+      src: './src/page/logo.owo',
+      type: "plug"
+    },
   ],
   // 调试模式配置
   dev: {

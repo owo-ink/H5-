@@ -1,42 +1,49 @@
 <template lang="pug">
 .two
-  img.soulless.so-1.item-1(width="713", height="716", src="@|two-1.png|")
-  img.soulless.so-2.item-2#previous(width="167", height="54", src="@|two-2.png|", :tap="previous")
-  img.soulless.so-3.item-3#last(width="167", height="54", src="@|two-3.png|", :tap="last")
-  img.soulless.so-4.item-4(width="205", height="55", src="@|two-4.png|", :tap="owo.go('one', 'scaleDownCenter', 'scaleUpCenter&&delay400', 'scaleDownCenter', 'scaleUpCenter&&delay400', true)")
-  .page#page 1/9
-  ul.text-box#textBox
-  ul.user-edit#userEdit
-    li
-      p 如何理解坚持党中央集中统一领导？
-    li
-      p 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
-    li
-      p 为什么要加强制度自信宣传教育？
-      .branch
-        a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-      .branch
-        a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-      .branch
-        a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-    li
-      p 如何建设高素质专业化干部队伍？
-      .branch
-        a(href="http://www.people.com.cn/") 如何理解“坚持党的领导的核心要义”？
-    li
-      p 如何理解坚持党中央集中统一领导？
-    li 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
-    li 为什么要加强制度自信宣传教育？
-      .branch
-        a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-      .branch
-        a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-      .branch
-        a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
-    li
-      p 如何建设高素质专业化干部队伍？
-      .branch
-        a(href="http://www.people.com.cn/") 如何理解“坚持党的领导的核心要义”？
+  .two-box
+    img.soulless.so-1.item-1(width="713", height="716", src="@|two-1.png|")
+    img.soulless.so-2.item-2#previous(width="167", height="54", src="@|two-2.png|", :tap="previous")
+    img.soulless.so-3.item-3#last(width="167", height="54", src="@|two-3.png|", :tap="last")
+    img.soulless.so-4.item-4(width="205", height="55", src="@|two-4.png|", :tap="owo.go('one', 'scaleDownCenter', 'scaleUpCenter&&delay400', 'scaleDownCenter', 'scaleUpCenter&delay400')")
+    .page#page 1/9
+    ul.text-box#textBox
+    ul.user-edit#userEdit
+      li
+        p 如何理解坚持党中央集中统一领导？
+      li
+        p 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
+      li
+        p 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+      li
+        p 如何建设高素质专业化干部队伍？
+        .branch
+          a(href="http://www.people.com.cn/") 如何理解“坚持党的领导的核心要义”？
+      li
+        p 如何理解坚持党中央集中统一领导？
+      li
+        p 如何提高制度执行力，把我国制度优势更好转化为国家治理效能？
+      li
+        p 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+        .branch
+          a(href="http://www.people.com.cn/") 为什么要加强制度自信宣传教育？
+      li
+        p 如何建设高素质专业化干部队伍？
+        .branch
+          a(href="http://www.people.com.cn/") 如何理解“坚持党的领导的核心要义”？
 </template>
 
 <script>
@@ -58,11 +65,12 @@
           this.data.pageNum++
           this.data.pageList[this.data.pageNum] = []
         }
-        item.onclick = function () {
-          if (this.classList.contains('active')) {
-            this.classList.remove('active')
+        item.getElementsByTagName('p')[0].onclick = function () {
+          const dom = this.parentNode || this.parentElement
+          if (dom.classList.contains('active')) {
+            dom.classList.remove('active')
           } else {
-            this.classList.add('active')
+            dom.classList.add('active')
           }
         }
         this.data.pageList[this.data.pageNum].push(item)
@@ -102,6 +110,11 @@
 
 
 <style lang="less">
+.two-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 .so-1 {
   position: absolute;
   left: 17px;
@@ -163,7 +176,11 @@
     color: black;
   }
   p {
+    cursor: pointer;
     padding-bottom: 5px;
+  }
+  a, p {
+    display: block;
   }
   .active .branch {
     height: auto;

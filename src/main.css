@@ -46,6 +46,144 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   clear: both;
 }
 
+.logo {
+  position: absolute;
+  left: 65px;
+  top: 236px;
+  z-index: 9;
+  width: 146px;
+}
+
 .scale-box {
   background-image: url('@|one-5.png|');
+}
+
+.pc .scale-box {
+  width: 100%;
+  height: 100%;
+  background-image: url("@|pc-bg.jpg|");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pc .one-box {
+  width: 450px;
+  height: 480px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.pc .one .so-4 {
+  height: 100%;
+  top: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.pc .one .so-3 {
+  left: 110px;
+  top: 45px;
+  font-size: 30px;
+  width: 30px;
+  line-height: 33px;
+}
+
+.pc .one .so-2 {
+  left: 280px;
+  top: 380px;
+  width: 110px;
+  height: auto;
+}
+
+.pc .logo {
+  left: -790px;
+  right: 0;
+  top: -760px;
+  bottom: 0;
+  margin: auto;
+  width: 90px;
+}
+
+.pc .two-box {
+  width: 913px;
+  height: 714px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("@|two-1-pc.png|");
+}
+
+.pc .two .so-1 {
+  display: none;
+}
+
+.pc .two .text-box {
+  top: 110px;
+  height: 455px;
+}
+
+.pc .two .page {
+  top: 50px;
+  left: 750px;
+}
+
+.pc .two .so-2 {
+  top: 575px;
+  width: 100px;
+  height: auto;
+  left: 520px;
+  cursor: pointer;
+}
+.pc .two .so-3 {
+  top: 575px;
+  width: 100px;
+  height: auto;
+  left: 630px;
+  cursor: pointer;
+}
+
+.pc .two .so-4 {
+  top: 575px;
+  left: 740px;
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+/*整体部分*/ 
+::-webkit-scrollbar
+{
+	width: 8px;
+	height: 8px;
+}
+/*滑动轨道*/ 
+::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+  background: none;
+  background-color: #e9e9e9;
+}
+/*滑块*/
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	background-color: #b8b8b8;
+}
+/*滑块效果*/ 
+::-webkit-scrollbar-thumb:hover
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	
 }

@@ -1,4 +1,94 @@
-// Tue Dec 03 2019 17:05:02 GMT+0800 (GMT+08:00)
+// Wed Dec 04 2019 10:49:07 GMT+0800 (GMT+08:00)
+
+// 存储页面基本信息
+var owo = {
+  // 手机入口
+  phoneEnter: "null",
+  // 全局方法变量
+  tool: {},
+  // 框架状态变量
+  state: {}
+};
+/*
+  存储每个页面的函数
+  键名：页面名称
+  键值：方法列表
+*/
+
+owo.script = {
+  "one": {
+    "created": function created() {}
+  },
+  "two": {
+    "data": {
+      "activeIndex": 0,
+      "pageNum": 0,
+      "pageList": []
+    },
+    "created": function created() {
+      var textList = this.$dom.userEdit.children;
+      var tempIndex = 0;
+      this.data.pageList[this.data.pageNum] = [];
+
+      for (var ind = 0; ind < textList.length; ind++) {
+        var item = textList[ind];
+        tempIndex++;
+
+        if (tempIndex > 5) {
+          tempIndex = 0;
+          this.data.pageNum++;
+          this.data.pageList[this.data.pageNum] = [];
+        }
+
+        item.getElementsByTagName('p')[0].onclick = function () {
+          var dom = this.parentNode || this.parentElement;
+
+          if (dom.classList.contains('active')) {
+            dom.classList.remove('active');
+          } else {
+            dom.classList.add('active');
+          }
+        };
+
+        this.data.pageList[this.data.pageNum].push(item);
+      }
+
+      this.setActive(0);
+      console.log(this.data.pageList);
+    },
+    "setActive": function setActive(index) {
+      var _this = this;
+
+      if (index === 0) {
+        this.$dom.previous.classList.add('forbidden');
+      } else {
+        this.$dom.previous.classList.remove('forbidden');
+      } // console.log(this.data.pageList.length, index)
+
+
+      if (this.data.pageList.length <= index + 1) {
+        this.$dom.last.classList.add('forbidden');
+      } else {
+        this.$dom.last.classList.remove('forbidden');
+      }
+
+      this.$dom.page.innerHTML = index + 1 + '/' + (this.data.pageNum + 1);
+      this.$dom.textBox.innerHTML = '';
+      this.data.pageList[index].forEach(function (element) {
+        _this.$dom.textBox.append(element);
+      });
+    },
+    "last": function last() {
+      this.data.activeIndex++;
+      this.setActive(this.data.activeIndex);
+    },
+    "previous": function previous() {
+      this.data.activeIndex--;
+      this.setActive(this.data.activeIndex);
+    }
+  },
+  "logo": {}
+};
 
 /* 方法合集 */
 var _owo = {}
@@ -227,6 +317,11 @@ _owo.showPage = function() {
   // 取出URL地址判断当前所在页面
   var pageArg = _owo.getarg(window.location.hash)
   
+  if (pageArg !== null) {
+    window.location.href = ''
+    return
+  }
+  
   
 
   // 计算$dom
@@ -242,16 +337,18 @@ _owo.showPage = function() {
   var page = pageArg ? pageArg : owo.entry
   if (page) {
     var entryDom = document.querySelector('.owo[template="' + page + '"]')
-    if (entryDom) {
-      // 显示主页面
-      entryDom.style.display = 'block'
-      window.owo.activePage = page
-      _owo.handlePage(owo.script[page], entryDom)
-      _owo.handleEvent(entryDom, null)
-
-    } else {
+    if (!entryDom) {
       console.error('入口文件设置错误,错误值为: ', page)
+      entryDom = document.querySelector('.owo')
+      page = entryDom.getAttribute('template')
+      window.location.replace('#' + page)
+      return
     }
+    // 显示主页面
+    entryDom.style.display = 'block'
+    window.owo.activePage = page
+    _owo.handlePage(owo.script[page], entryDom)
+    _owo.handleEvent(entryDom, null)
   } else {
     console.error('未设置程序入口!')
   }
@@ -348,23 +445,6 @@ _owo._event_tap = function (tempDom, callBack) {
 }
 
 
-
-
-// 这是用于代码调试的自动刷新代码，他不应该出现在正式上线版本!
-if ("WebSocket" in window) {
-  // 打开一个 web socket
-  if (!window._owo.ws) window._owo.ws = new WebSocket("ws://" + window.location.host)
-  window._owo.ws.onmessage = function (evt) { 
-    if (evt.data == 'reload') {
-      location.reload()
-    }
-  }
-  window._owo.ws.onclose = function() { 
-    console.info('与服务器断开连接')
-  }
-} else {
-  console.error('浏览器不支持WebSocket')
-}
 
 // 切换页面动画
 function animation (oldDom, newDom, animationIn, animationOut, forward) {
