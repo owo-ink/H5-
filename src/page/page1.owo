@@ -1,5 +1,5 @@
 <template lang="pug">
-.one 内容
+.page-1 内容
 </template>
 
 <script>
