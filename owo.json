@@ -62,10 +62,6 @@
 		"name": "main",
 		"src": "./src/main.js",
 		"resource": true
-	}, {
-		"name": "html2canvas.min",
-		"src": "./src/resource/html2canvas.min.js",
-		"resource": true
 	}],
 	"styleList": [{
 		"name": "main",
@@ -73,21 +69,8 @@
 		"resource": true
 	}],
 	"pageList": [{
-		"name": "loading",
-		"src": "./src/page/loading.owo"
-	}, {
 		"name": "page1",
 		"src": "./src/page/page1.owo",
-		"type": "page",
-		"temple": "<plug name=\"page1\" src=\"./src/page/page1.owo\" type=\"page\"></plug>",
-		"hash": "461576280822571fed82fd0900562ffb"
-	}, {
-		"name": "page2",
-		"src": "/src/page/page2.owo",
-		"type": "page"
-	}, {
-		"name": "page3",
-		"src": "/src/page/page3.owo",
 		"type": "page"
 	}],
 	"mode": {

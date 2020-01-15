@@ -21,9 +21,6 @@ function getScale () {
     scaleBox.style.transform = `scale(${scale}, ${scale}) translate(${(window.innerWidth - deviseW * scale) / 2 / scale + 'px' }, 0)`
     scaleBox.style.transformOrigin = '0 0 0'
   }
-  setTimeout(() => {
-    document.getElementsByTagName('html')[0].style.height = scaleBox.offsetHeight * scale + 'px'
-  }, 0)
 }
 
 getScale()
