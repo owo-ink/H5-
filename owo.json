@@ -99,6 +99,11 @@
 			"name": "loading",
 			"src": "https://template.owo.ink/855f7873bfb2014c.owo",
 			"type": "page"
+		},
+		{
+			"name": "page1",
+			"src": "./src/page/page1.owo",
+			"type": "block"
 		}
 	],
 	"mode": {
