@@ -6,3 +6,14 @@ function scrollIntoView () {
 document.body.addEventListener('touchmove', function (e) {
   e.preventDefault() // 阻止默认的处理方式(阻止下拉滑动的效果)
 }, {passive: false})
+
+setTimeout(() => {
+  autoScale({
+    deviseW: 750,
+    deviseH: 1508,
+    center: 'middle',
+    scroll: false,
+    type: 'scale',
+    box: '.scale-box'
+  })
+}, 100);
